@@ -6,13 +6,11 @@ que combine todos os conceitos das aulas 6-8 em um sistema de gerenciamento de s
 
 import random
 
-# Variáveis globais
 especiais = "!@#$%&*"
 caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*"
 senhas = {}
 
 def avaliar_forca(senha):
-    """Avalia a força da senha baseada em critérios de complexidade."""
     tem_maiuscula = any(letra.isupper() for letra in senha)
     tem_minuscula = any(letra.islower() for letra in senha)
     tem_numero = any(letra.isdigit() for letra in senha)
