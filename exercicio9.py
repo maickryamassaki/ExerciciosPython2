@@ -34,7 +34,6 @@ def analisar_logs(logs):
                 if nivel == "ERROR":
                     erros_por_ip[ip] = erros_por_ip.get(ip, 0) + 1
             else:
-                # Caso encontre um nível não esperado
                 contagem_malformados += 1
         except Exception:
             contagem_malformados += 1
